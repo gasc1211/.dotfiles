@@ -72,7 +72,7 @@ export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git nvm virtualenvwrapper)
+plugins=(git nvm) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 alias zshconfig="nvim ~/.zshrc"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+alias dev="cd ~/GitHub/"
+alias notes="cd ~/GitHub/Notes"
 
 function conda(){
    source ~/anaconda3/bin/activate
