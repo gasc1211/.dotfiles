@@ -99,7 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias zshconfig="nvim ~/.zshrc"
+alias zshconf="nvim ~/.zshrc"
+alias i3conf="nvim ~/.config/i3/config"
+alias polyconf="nvim ~/.config/polybar/config"
+alias rofithemeconfig="nvim ~/.Xresources"
+alias alacrittyconf="nvim ~/.config/alacritty/alacritty.yml"
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias dev="cd ~/GitHub/"
 alias notes="cd ~/GitHub/Notes"
@@ -111,3 +115,8 @@ function conda(){
 echo ""
 fortune
 echo ""
+
+# Start Xorg
+if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
+    then startx;
+fi
