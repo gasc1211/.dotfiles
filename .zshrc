@@ -115,8 +115,3 @@ function conda(){
 echo ""
 fortune
 echo ""
-
-# Start Xorg
-if [[ -z $DISPLAY ]] && [[ $(tty) = /dev/tty1 ]];
-    then startx;
-fi
