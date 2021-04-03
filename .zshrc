@@ -42,7 +42,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # Caution: this setting can cause issues with multiline prompts (zsh 5.7.1 and newer seem to work)
@@ -97,21 +97,26 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-alias zshconf="nvim ~/.zshrc"
-alias i3conf="nvim ~/.config/i3/config"
-alias polyconf="nvim ~/.config/polybar/config"
-alias rofithemeconfig="nvim ~/.Xresources"
-alias alacrittyconf="nvim ~/.config/alacritty/alacritty.yml"
-alias ohmyzsh="nvim ~/.oh-my-zsh"
+
+# Config Files
+alias nvim-conf="nvim ~/.config/nvim/init.vim"
+alias zsh-conf="nvim ~/.zshrc"
+alias i3-conf="nvim ~/.config/i3/config"
+alias polybar-conf="nvim ~/.config/polybar/config"
+alias rofi-conf="nvim ~/.Xresources"
+alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
+
+# Shortcuts
 alias dev="cd ~/GitHub/"
 alias notes="cd ~/GitHub/Notes"
 
+# Activate Anaconda
 function conda(){
    source ~/anaconda3/bin/activate
 }
 
+# Eye Candy
 echo ""
 fortune
 echo ""
+
