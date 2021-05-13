@@ -65,8 +65,6 @@ ENABLE_CORRECTION="true"
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
-export VIRTUALENVWRAPPER_PYTHON=$(which python3)
-
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
@@ -84,11 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -97,6 +95,12 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+# Python Virtual Enviroments
+export VIRTUALENVWRAPPER_PYTHON=$(which python3)
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/GitHub
+source $HOME/.local/bin/virtualenvwrapper.sh
 
 # Config Files
 alias nvim-conf="nvim ~/.config/nvim/init.vim"
@@ -114,9 +118,4 @@ alias notes="cd ~/GitHub/Notes"
 function conda(){
    source ~/anaconda3/bin/activate
 }
-
-# Eye Candy
-echo ""
-fortune
-echo ""
 
