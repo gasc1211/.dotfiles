@@ -284,39 +284,179 @@ font:
   #  cyan:    '#5b7d78'
   #  white:   '#828482'
 
-# Colors (Solarized Dark)
-colors:
-  # Default colors
-  primary:
-    background: '#002b36' # base03
-    foreground: '#839496' # base0
+colorschemes:
+    
+    # Colors (Nord)
+    nord: &nord
+       # Default colors
+       primary:
+         background: '#2E3440'
+         foreground: '#D8DEE9'
 
-  # Cursor colors
-  cursor:
-    text:   '#002b36' # base03
-    cursor: '#839496' # base0
+       # Normal colors
+       normal:
+         black:   '#3B4252'
+         red:     '#BF616A'
+         green:   '#A3BE8C'
+         yellow:  '#EBCB8B'
+         blue:    '#81A1C1'
+         magenta: '#B48EAD'
+         cyan:    '#88C0D0'
+         white:   '#E5E9F0'
 
-  # Normal colors
-  normal:
-    black:   '#073642' # base02
-    red:     '#dc322f' # red
-    green:   '#859900' # green
-    yellow:  '#b58900' # yellow
-    blue:    '#268bd2' # blue
-    magenta: '#d33682' # magenta
-    cyan:    '#2aa198' # cyan
-    white:   '#eee8d5' # base2
+       # Bright colors
+       bright:
+         black:   '#4C566A'
+         red:     '#BF616A'
+         green:   '#A3BE8C'
+         yellow:  '#EBCB8B'
+         blue:    '#81A1C1'
+         magenta: '#B48EAD'
+         cyan:    '#8FBCBB'
+         white:   '#ECEFF4'
 
-  # Bright colors
-  bright:
-    black:   '#002b36' # base03
-    red:     '#cb4b16' # orange
-    green:   '#586e75' # base01
-    yellow:  '#657b83' # base00
-    blue:    '#839496' # base0
-    magenta: '#6c71c4' # violet
-    cyan:    '#93a1a1' # base1
-    white:   '#fdf6e3' # base3
+    # Colors (Solarized Dark)
+    solarized_dark: &solarized_dark
+      # Default colors
+      primary:
+        background: '#002b36' # base03
+        foreground: '#839496' # base0
+
+      # Cursor colors
+      cursor:
+        text:   '#002b36' # base03
+        cursor: '#839496' # base0
+
+      # Normal colors
+      normal:
+        black:   '#073642' # base02
+        red:     '#dc322f' # red
+        green:   '#859900' # green
+        yellow:  '#b58900' # yellow
+        blue:    '#268bd2' # blue
+        magenta: '#d33682' # magenta
+        cyan:    '#2aa198' # cyan
+        white:   '#eee8d5' # base2
+
+      # Bright colors
+      bright:
+        black:   '#002b36' # base03
+        red:     '#cb4b16' # orange
+        green:   '#586e75' # base01
+        yellow:  '#657b83' # base00
+        blue:    '#839496' # base0
+        magenta: '#6c71c4' # violet
+        cyan:    '#93a1a1' # base1
+        white:   '#fdf6e3' # base3
+
+    # Colors (Cyberpunk Neon)
+    cyberpunk-neon: &cyberpunk-neon
+      # Default colours
+      primary:
+        background: '0x000b1e'
+        foreground: '0x0abdc6'
+
+      # Colors that should be used to draw the terminal cursor. If these are unset,
+      # the cursor colour will be the inverse of the cell colour.
+      # cursor:
+      #   text: '0x2e2e2d'
+      #   # text: '0x000000'
+      #   cursor: '0xffffff'
+
+      # Normal colors
+      normal:
+        black:   '0x123e7c'
+        red:     '0xff0000'
+        green:   '0xd300c4'
+        yellow:  '0xf57800'
+        blue:    '0x123e7c'
+        magenta: '0x711c91'
+        cyan:    '0x0abdc6'
+        white:   '0xd7d7d5'
+
+      # Bright colors
+      bright:
+        black:   '0x1c61c2'
+        red:     '0xff0000'
+        green:   '0xd300c4'
+        yellow:  '0xf57800'
+        blue:    '0x00ff00'
+        magenta: '0x711c91'
+        cyan:    '0x0abdc6'
+        white:   '0xd7d7d5'
+
+      # dim colors
+      dim:
+        black:   '0x1c61c2'
+        red:     '0xff0000'
+        green:   '0xd300c4'
+        yellow:  '0xf57800'
+        blue:    '0x123e7c'
+        magenta: '0x711c91'
+        cyan:    '0x0abdc6'
+        white:   '0xd7d7d5'
+
+    # Colors (Tokyo Night)
+    tokyo-night: &tokyo-night
+        # Default colors
+        primary:
+          background: '0x1a1b26'
+          foreground: '0xa9b1d6'
+
+        # Normal colors
+        normal:
+          black:   '0x32344a'
+          red:     '0xf7768e'
+          green:   '0x9ece6a'
+          yellow:  '0xe0af68'
+          blue:    '0x7aa2f7'
+          magenta: '0xad8ee6'
+          cyan:    '0x449dab'
+          white:   '0x787c99'
+
+        # Bright colors
+        bright:
+          black:   '0x444b6a'
+          red:     '0xff7a93'
+          green:   '0xb9f27c'
+          yellow:  '0xff9e64'
+          blue:    '0x7da6ff'
+          magenta: '0xbb9af7'
+          cyan:    '0x0db9d7'
+          white:   '0xacb0d0'
+
+    # Colors (Tokyo Night Storm)
+    tokyo-night-storm: &tokyo-night-storm
+        # Default colors
+        primary:
+          background: '0x24283b'
+          foreground: '0xa9b1d6'
+
+        # Normal colors
+        normal:
+          black:   '0x32344a'
+          red:     '0xf7768e'
+          green:   '0x9ece6a'
+          yellow:  '0xe0af68'
+          blue:    '0x7aa2f7'
+          magenta: '0xad8ee6'
+          cyan:    '0x449dab'
+          white:   '0x9699a8'
+
+        # Bright colors
+        bright:
+          black:   '0x444b6a'
+          red:     '0xff7a93'
+          green:   '0xb9f27c'
+          yellow:  '0xff9e64'
+          blue:    '0x7da6ff'
+          magenta: '0xbb9af7'
+          cyan:    '0x0db9d7'
+          white:   '0xacb0d0'
+
+colors: *tokyo-night
+
+#draw_bold_text_with_bright_colors: true
 
   # Indexed Colors
   #

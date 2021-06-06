@@ -14,7 +14,7 @@ call plug#end()
 " Editor Config
 set termguicolors
 set smartindent
-set relativenumber
+set number
 set smartcase
 set signcolumn=yes
 set tabstop=4 softtabstop=4
