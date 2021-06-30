@@ -100,7 +100,7 @@ fi
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/GitHub
-source $HOME/.local/bin/virtualenvwrapper.sh
+#source $HOME/.local/bin/virtualenvwrapper.sh
 
 # Config Files
 alias nvim-conf="nvim ~/.config/nvim/init.vim"
