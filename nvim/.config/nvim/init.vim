@@ -1,6 +1,6 @@
 
 " Plugins vim-plug
-call plug#begin()
+"call plug#begin()
 
 "Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 "Plug 'preservim/nerdtree'
@@ -9,7 +9,7 @@ call plug#begin()
 "Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
 
-call plug#end()
+"call plug#end()
 
 " Editor Config
 "set termguicolors
