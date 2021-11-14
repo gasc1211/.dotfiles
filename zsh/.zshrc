@@ -112,10 +112,8 @@ alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
 
 # Shortcuts
 alias dev="cd ~/GitHub/"
-alias notes="cd ~/GitHub/Notes"
 
 # Activate Anaconda
 function conda(){
    source ~/anaconda3/bin/activate
 }
-
