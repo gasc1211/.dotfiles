@@ -1,28 +1,33 @@
 
 " Plugins vim-plug
-"call plug#begin()
-"
-"Plug 'https://github.com/junegunn/vim-github-dashboard.git'
-"Plug 'preservim/nerdtree'
-"Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-"Plug 'lifepillar/vim-solarized8'
-"Plug 'vim-airline/vim-airline'
-"Plug 'vim-airline/vim-airline-themes'
-
-"call plug#end()
+call plug#begin()
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+call plug#end()
 
 " Editor Config
-"set termguicolors
+set nocompatible
+
 set smartindent
+set autoindent
+
 set number
+
 set smartcase
+set ignorecase
+
 set signcolumn=yes
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
+set showtabline=2
 
-" Theme Config
-"let g:airline_theme='solarized'
-"let g:solarized_termtrans=1
-set background=dark
-"colorscheme solarized8
+set mouse=a
+syntax on
+
+set hidden
+set wildmenu
+set showcmd
+set hlsearch
+
+set confirm
+" lua require('settings')
