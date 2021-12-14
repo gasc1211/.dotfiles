@@ -2,6 +2,7 @@
 " Plugins vim-plug
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
 call plug#end()
 
 " Editor Config
@@ -11,6 +12,7 @@ set smartindent
 set autoindent
 
 set number
+set showmatch
 
 set smartcase
 set ignorecase
@@ -30,4 +32,6 @@ set showcmd
 set hlsearch
 
 set confirm
+
+set clipboard=unnamedplus
 " lua require('settings')
