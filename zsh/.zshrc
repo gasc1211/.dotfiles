@@ -112,7 +112,7 @@ alias rofi-conf="nvim ~/.Xresources"
 alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
 
 # Shortcuts
-alias dev="cd ~/GitHub/"
+alias dev="cd ~/repos/"
 
 # Activate Anaconda
 function conda(){
