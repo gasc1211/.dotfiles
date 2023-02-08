@@ -9,7 +9,7 @@ export ZSH="/home/gasc1211/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # ZSH_THEME="agnoster, alanpeabody, cypher"
-ZSH_THEME="alanpeabody"
+ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -100,24 +100,26 @@ fi
 # Python Virtual Enviroments
 export VIRTUALENVWRAPPER_PYTHON=$(which python3)
 export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/GitHub
+export PROJECT_HOME=$HOME/repos
 #source $HOME/.local/bin/virtualenvwrapper.sh
 
 # Config Files
-alias nvim-conf="nvim ~/.config/nvim/init.vim"
+alias nvim-conf="nvim ~/.config/nvim/"
 alias zsh-conf="nvim ~/.zshrc"
-alias i3-conf="nvim ~/.config/i3/config"
-alias polybar-conf="nvim ~/.config/polybar/config"
-alias rofi-conf="nvim ~/.Xresources"
+# alias i3-conf="nvim ~/.config/i3/config"
+# alias polybar-conf="nvim ~/.config/polybar/config"
+# alias rofi-conf="nvim ~/.Xresources"
 alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
 
 # Shortcuts
 alias dev="cd ~/repos/"
+alias cat="batcat"
+alias vim="nvim"
 
 # Activate Anaconda
-function conda(){
-   source ~/anaconda3/bin/activate
-}
+# function conda(){
+#    source ~/anaconda3/bin/activate
+# }
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
