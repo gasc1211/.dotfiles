@@ -1,8 +1,13 @@
+lua << EOF
+require("gasc1211")
+EOF
 
 " Plugins vim-plug
 call plug#begin()
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'dstein64/nvim-scrollview', { 'branch': 'main' }
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'kyazdani42/nvim-web-devicons'
 call plug#end()
 
 " Editor Config
