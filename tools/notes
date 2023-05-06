@@ -1,3 +1,11 @@
 #!/usr/bin/env bash
-echo -e "$(figlet "$1")\n@author: Gabriel Suazo (gasuazo@unah.hn)\n@date: $(date +%D)\n" >> "$1.md";
-nvim "$1.md";
+
+# Verify if a name has been specified
+if [[ -z $1 ]]; then
+	echo "Filename not specified. Specify one to create the notes file."
+	exit 1
+fi
+
+# If specified we create the file and edit the note on nvim
+echo -e "\`\`\`\n$(figlet "$1")\n\`\`\`\n@author: Gabriel Suazo (gasuazo@unah.hn)\n@date: $(date +%D)\n" >>"$1.md"
+nvim "$1.md"
