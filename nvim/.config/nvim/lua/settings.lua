@@ -39,4 +39,4 @@ opt.clipboard=unnamedplus
 opt.scrolloff = 8
 opt.updatetime = 50
 
-vim.g.leader = " "
+vim.g.mapleader = " "
