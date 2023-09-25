@@ -30,8 +30,8 @@ window:
   # must be at least `2`, while using a value of `0` for columns and lines will
   # fall back to the window manager's recommended size.
   dimensions:
-    columns: 80
-    lines: 60
+    columns: 120
+    lines: 32
 
   # Window position (changes require restart)
   #
@@ -62,12 +62,13 @@ window:
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
   # decorations: full
+  decorations: none
 
   # Background opacity
   #
   # Window opacity as a floating point number from `0.0` to `1.0`.
   # The value `0.0` is completely transparent and `1.0` is opaque.
-  opacity: 0.9
+  opacity: 0.75
 
   # Startup Mode (changes require restart)
   #
@@ -117,7 +118,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: JetBrains Mono NF
+    family: JetBrainsMono NF
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -128,7 +129,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono NF
+    family: JetBrainsMono NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -139,7 +140,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono NF
+    family: JetBrainsMono NF
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -150,7 +151,7 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: JetBrains Mono NF
+    family: JetBrainsMono NF
 
     # The `style` can be specified to pick a specific face.
     style: Bold Italic

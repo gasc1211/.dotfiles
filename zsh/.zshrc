@@ -112,8 +112,9 @@ alias zsh-conf="nvim ~/.zshrc"
 alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
 
 # Shortcuts
-alias dev="cd ~/repos/"
-alias cat="batcat"
+alias sudo="doas"
+alias dev="cd ~/code"
+alias cat="bat"
 alias vim="nvim"
 
 # Activate Anaconda
@@ -121,6 +122,25 @@ alias vim="nvim"
 #    source ~/anaconda3/bin/activate
 # }
 
+export TERM=xterm-256color
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# bun completions
+[ -s "/home/gasc1211/.bun/_bun" ] && source "/home/gasc1211/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/gasc1211/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+#
+# export QT_QPA_PLATFORM=wayland
