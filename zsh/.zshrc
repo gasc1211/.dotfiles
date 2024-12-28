@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.dotfiles/tools:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.local/bin:$HOME/.dotfiles/tools:$HOME/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/gasc1211/.oh-my-zsh"
@@ -112,7 +112,6 @@ alias zsh-conf="nvim ~/.zshrc"
 alias alacritty-conf="nvim ~/.config/alacritty/alacritty.yml"
 
 # Shortcuts
-alias sudo="doas"
 alias dev="cd ~/code"
 alias cat="bat"
 alias vim="nvim"
@@ -144,3 +143,20 @@ esac
 # pnpm end
 #
 # export QT_QPA_PLATFORM=wayland
+#
+# Settings for perl
+LC_CTYPE=en_US.UTF-8
+LC_ALL=en_US.UTF-8
+
+# fnm
+FNM_PATH="/home/gasc1211/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/gasc1211/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
+eval "$(fnm env --use-on-cd --shell zsh)"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
